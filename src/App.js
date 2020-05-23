@@ -6,7 +6,7 @@ import './App.css'
 
 const values = ["shop", "commerce", "futures", "culture"];
 
-const Tag = () => {
+const Tag = (props) => {
   const { result, dencrypt } = useDencrypt();
 
   React.useEffect(() => {
@@ -21,7 +21,11 @@ const Tag = () => {
     return () => clearInterval(action);
   }, []);
 
-  return <div>{result}</div>;
+  if(!props.color){
+    return <div>{result}</div>;
+  }else {
+    return <div style={{color: 'yellow'}}>{result}</div>
+  }
 };
 
 
@@ -37,7 +41,7 @@ function App() {
       <div className="title">
         <Tag />
         <br />
-        <Tag />
+        <Tag color={true} />
         <br />
         <Tag />
         <br />
