@@ -1,0 +1,36 @@
+
+.symbol:hover {
+	font-style: italic;
+}
+
+.symbol {
+	font-size: 150px;
+	margin: 100px;
+	text-align: center;
+}
+
+.thing {
+	height: 200px;
+	margin-top: 20px !important;
+	margin: 100px;
+	width: 22%;
+	display:inline-block;
+}
+
+.button:hover {
+	background: lightgrey;
+}
+
+.button {
+	background: white;
+	align-content: center;
+	width: 100px;
+	box-shadow: 5px 7px;
+	height: 40px;
+}
+
+.button-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

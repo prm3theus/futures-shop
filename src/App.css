@@ -1,0 +1,11 @@
+.App {
+    background: white;
+}
+
+.title {
+    margin-top: 100px;
+    letter-spacing: 30px;
+    text-align: center;
+    color: grey;
+    font-size: 13px;
+}
